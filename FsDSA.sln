@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsDSA", "FsDSA\FsDSA.fsproj", "{BF9F7860-C56F-40C0-881E-2F526B8D833C}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsDSA.Tests", "FsDSA.Tests\FsDSA.Tests.fsproj", "{704FBC7E-A70E-4BC3-853B-F5C70F194144}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF9F7860-C56F-40C0-881E-2F526B8D833C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF9F7860-C56F-40C0-881E-2F526B8D833C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF9F7860-C56F-40C0-881E-2F526B8D833C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF9F7860-C56F-40C0-881E-2F526B8D833C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{704FBC7E-A70E-4BC3-853B-F5C70F194144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{704FBC7E-A70E-4BC3-853B-F5C70F194144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{704FBC7E-A70E-4BC3-853B-F5C70F194144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{704FBC7E-A70E-4BC3-853B-F5C70F194144}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
