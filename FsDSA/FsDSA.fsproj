@@ -11,6 +11,7 @@
     <Compile Include="Algos\Strings.fs" />
     <Compile Include="Problems\SumTo.fs" />
     <Compile Include="Problems\Products.fs" />
+    <Compile Include="Problems\Arrays\RemoveDuplicates.fs" />
     <Compile Include="LanguageUsage\OptionalParameters.fs" />
     <Compile Include="LanguageUsage\QueryParameterPrettyPrint.fs" />
     <Compile Include="DataStructures\Tree.fs" />

@@ -11,6 +11,7 @@
     <Compile Include="BinaryTreeTests.fs" />
     <Compile Include="Problems\SumToTests.fs" />
     <Compile Include="Problems\ProductsTests.fs" />
+    <Compile Include="Problems\Arrays\RemoveDuplicatesTest.fs" />
     <Compile Include="LanguageUsage\OptionalParametersTests.fs" />
     <Compile Include="Algos\StringTests.fs" />
   </ItemGroup>
