@@ -1,15 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
 
     <IsPackable>false</IsPackable>
     <GenerateProgramFile>false</GenerateProgramFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Tests.fs" />
-    <Compile Include="Program.fs" />
+    <Compile Include="BinaryTreeTests.fs" />
+    <Compile Include="Problems\SumToTests.fs" />
+    <Compile Include="Problems\ProductsTests.fs" />
+    <Compile Include="LanguageUsage\OptionalParametersTests.fs" />
+    <Compile Include="Algos\StringTests.fs" />
   </ItemGroup>
 
   <ItemGroup>

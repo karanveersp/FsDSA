@@ -1,6 +1,29 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=df0fc86b_002D0b09_002D49de_002D91df_002Dfd5b5d259312/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net7.0::Tests&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=df0fc86b_002D0b09_002D49de_002D91df_002Dfd5b5d259312/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net7.0::Tests&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net7.0::FsDSA.Tests.Problems.AddToKTests.Finds numbers adding to 17&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net7.0::FsDSA.Tests.Problems.AddToKTests.Doesn't find numbers adding to 3&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net7.0::FsDSA.Tests.Problems.AddToKTests.Finds number adding to 1&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net7.0::FsDSA.Tests.Problems.AddToKTests.Finds numbers adding to 9&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net7.0::FsDSA.Tests.Problems.AddToKTests.Finds numbers adding to 15&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net7.0::FsDSA.Tests.Problems.AddToKTests.Doesn't find numbers adding to 15&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net7.0::FsDSA.Tests.Problems.AddToKTests.Finds numbers adding to 0&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net7.0::FsDSA.Tests.Problems.AddToKTests&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net7.0::FsDSA.Tests.Problems.ProductsTests.[3,2,1] returns [2,3,6]&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net7.0::FsDSA.Tests.Problems.ProductsTests.[1, 2, 3, 4, 5 returns [120, 60, 40, 30, 24]&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net7.0::FsDSA.Tests.LanguageUsage.LanguageUsageTests.Greeter doesn't yell by default&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net7.0::FsDSA.Tests.LanguageUsage.LanguageUsageTests.Greeter yells when true is passed&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net7.0::FsDSA.Tests.LanguageUsage.LanguageUsageTests&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net7.0::FsDSA.Tests.LanguageUsage.OptionalParametersTests&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net8.0::FsDSA.Tests.Problems.ProductsTests&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net8.0::FsDSA.Tests.LanguageUsage.OptionalParametersTests&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net8.0::Tests&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net8.0::FsDSA.Tests.BinaryTreeTests&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::704FBC7E-A70E-4BC3-853B-F5C70F194144::net8.0::FsDSA.Tests.Algos.StringTests&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+    &lt;ProjectFile&gt;704FBC7E-A70E-4BC3-853B-F5C70F194144/d:Problems/f:SumToTests.fs&lt;/ProjectFile&gt;
+  &lt;/Or&gt;
+&lt;/SessionState&gt;</s:String>
+	</wpf:ResourceDictionary>

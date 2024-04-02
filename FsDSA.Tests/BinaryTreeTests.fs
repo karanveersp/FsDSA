@@ -1,8 +1,7 @@
-module Tests
+module FsDSA.Tests.BinaryTreeTests
 
 open Xunit
 open FsDSA.BinaryTree
-open FsDSA.Algos
 open FsDSA
 
 
@@ -32,11 +31,8 @@ let ``Binary Tree Height Works`` () =
     let result = height btree
     Assert.Equal(3, result)
 
-[<Fact>]
-let ``Palindrome Works`` () =
 
-    let result = isPalindrome ("Race Car")
-    Assert.True(result)
+
 // [<Fact>]
 // let ``Permutations Works`` () =
 //     let expected =

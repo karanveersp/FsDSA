@@ -2,23 +2,23 @@
 
 type BinaryTree<'a> =
     | Empty
-    | Node of 'a * BinaryTree<'a> * BinaryTree<'a> // value, left, right
+    | Node of value: 'a * left : BinaryTree<'a> * right : BinaryTree<'a>
 
 module BinaryTree =
     let rec preorder tree : 'a list =
         match tree with
         | Empty -> []
-        | Node (value, left, right) -> [ value ] @ (preorder left) @ (preorder right)
+        | Node(value, left, right) -> [ value ] @ (preorder left) @ (preorder right)
 
     let rec inorder tree : 'a list =
         match tree with
         | Empty -> []
-        | Node (value: 'a, left, right) -> (inorder left) @ [ value ] @ (inorder right)
+        | Node (value, left, right) -> (inorder left) @ [ value ] @ (inorder right)
 
     let rec postorder tree : 'a list =
         match tree with
         | Empty -> []
-        | Node (value: 'a, left, right) -> (postorder left) @ (postorder right) @ [ value ]
+        | Node (value, left, right) -> (postorder left) @ (postorder right) @ [ value ]
 
     let rec height tree : int =
         match tree with
