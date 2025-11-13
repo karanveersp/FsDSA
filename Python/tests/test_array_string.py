@@ -3,7 +3,14 @@ import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from array_string import gcdOfStrings, kidsWithCandies, canPlaceFlowers, reverseVowels
+from array_string import (
+    gcdOfStrings,
+    kidsWithCandies,
+    canPlaceFlowers,
+    reverseVowels,
+    reverseWords,
+    productExceptSelf,
+)
 
 
 def test_gcd_of_strings_same_pattern_repeated():
@@ -64,3 +71,28 @@ def test_reverse_vowels_ex1():
 def test_reverse_vowels_ex2():
     res = reverseVowels("leetcode")
     assert res == "leotcede"
+
+
+def test_reverse_words_ex1():
+    res = reverseWords("the sky is blue")
+    assert res == "blue is sky the"
+
+
+def test_reverse_words_ex2():
+    res = reverseWords("  hello world  ")
+    assert res == "world hello"
+
+
+def test_reverse_words_ex3():
+    res = reverseWords("a good   example")
+    assert res == "example good a"
+
+
+def test_product_except_self_ex1():
+    res = productExceptSelf([1, 2, 3, 4])
+    assert res == [24, 12, 8, 6]
+
+
+def test_product_except_self_ex2():
+    res = productExceptSelf([-1, 1, 0, -3, 3])
+    assert res == [0, 0, 9, 0, 0]

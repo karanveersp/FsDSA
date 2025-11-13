@@ -101,3 +101,64 @@ def reverseVowels(s: str) -> str:
         i += 1
         j -= 1
     return "".join(arr)
+
+
+def reverseWords(s: str) -> str:
+    words = [w.strip() for w in s.split(" ") if w.strip() != ""]
+    i = 0
+    j = len(words) - 1
+    while i < j and i < len(s) - 1 and j >= 0:
+        words[i], words[j] = words[j], words[i]
+        i += 1
+        j -= 1
+    return " ".join(words)
+
+
+def productExceptSelf_orig(nums: List[int]) -> List[int]:
+    "O(n) worst case runtime, with O(n) space."
+    left_prod = [1 for _ in range(len(nums))]
+    for i in range(len(nums)):
+        # assign products from the left
+        if i == 0:
+            continue
+        elif i == 1:
+            left_prod[1] = nums[0] * 1
+        else:
+            left_prod[i] = nums[i - 1] * left_prod[i - 1]
+
+    right_prod = [1 for _ in range(len(nums))]
+    for i in range(len(nums)):
+        # assign products from the right
+        j = len(nums) - 1 - i
+        if i == 0:
+            continue
+        elif i == 1:
+            right_prod[j] = nums[j + 1] * 1
+        else:
+            right_prod[j] = nums[j + 1] * right_prod[j + 1]
+
+    return [left_prod[i] * right_prod[i] for i in range(len(nums))]
+
+
+def productExceptSelf(nums: List[int]) -> List[int]:
+    """O(n) with O(1) space not counting result array. Two-Pass Scan.
+    Compute prefix results going left -> right.
+    Compute suffix results going right -> left.
+    Combine them to get answers for each position. In functional programming this operation is called a `scan` like `scanl`/`scanr` in Haskell.
+    This pattern is a fundamental technique in competitive programming and is often one of the
+    first optimizations taught for transforming O(n²) brute force solutions into O(n) solutions!
+    """
+    n = len(nums)
+
+    res = [1] * n
+
+    # build left products directly into result
+    for i in range(1, n):
+        res[i] = res[i - 1] * nums[i - 1]
+
+    # multiply by right products on the fly
+    right_product = 1
+    for i in range(n - 1, -1, -1):  # [last index to 0]
+        res[i] *= right_product  # res[i] is already left products (i-1)
+        right_product *= nums[i]  # accumulate right product
+    return res
