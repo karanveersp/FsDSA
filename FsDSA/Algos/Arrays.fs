@@ -1,6 +1,6 @@
 module FsDSA.Algos.Arrays
 
-let print2DArray (matrix: int [,]) =
+let print2DArray (matrix: int[,]) =
     let height = matrix.GetLength(0)
     let width = matrix.GetLength(1)
 
