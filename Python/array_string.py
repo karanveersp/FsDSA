@@ -162,3 +162,23 @@ def productExceptSelf(nums: List[int]) -> List[int]:
         res[i] *= right_product  # res[i] is already left products (i-1)
         right_product *= nums[i]  # accumulate right product
     return res
+
+
+def increasingTriplet(nums: List[int]) -> bool:
+    """
+    Given an int array, return True if there exists a triple of indices (i, j, k) such that i < j < k and nums[i] < nums[j] < nums[k].
+    If no such indices exist, return False.
+
+    The solution is Greedy "Potential" Tracking where you're only tracking the best potential for forming a triplet
+    as you scan.
+    """
+
+    fst = snd = float("inf")
+    for num in nums:
+        if num <= fst:
+            fst = num
+        elif num <= snd:
+            snd = num
+        else:
+            return True
+    return False

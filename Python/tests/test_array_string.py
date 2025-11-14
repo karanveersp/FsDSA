@@ -10,6 +10,7 @@ from array_string import (
     reverseVowels,
     reverseWords,
     productExceptSelf,
+    increasingTriplet,
 )
 
 
@@ -96,3 +97,33 @@ def test_product_except_self_ex1():
 def test_product_except_self_ex2():
     res = productExceptSelf([-1, 1, 0, -3, 3])
     assert res == [0, 0, 9, 0, 0]
+
+
+def test_increasing_triplet_subsequence_ex1():
+    res = increasingTriplet([1, 2, 3, 4, 5])
+    assert res
+
+
+def test_increasing_triplet_subsequence_ex2():
+    res = increasingTriplet([5, 4, 3, 2, 1])
+    assert not res
+
+
+def test_increasing_triplet_subsequence_ex3():
+    res = increasingTriplet([2, 1, 5, 0, 4, 6])
+    assert res
+
+
+def test_increasing_triplet_subsequence_ex4():
+    res = increasingTriplet([20, 100, 10, 12, 5, 13])
+    assert res
+
+
+def test_increasing_triplet_subsequence_ex5():
+    res = increasingTriplet([1, 5, 0, 4, 1, 3])
+    assert res
+
+
+def test_increasing_triplet_subsequence_ex6():
+    res = increasingTriplet([1, 1, -2, 6])
+    assert not res
