@@ -194,9 +194,7 @@ def compressString(chars: List[str]) -> int:
     """
     # lets use i to track our current character group, and use j to count the number of repeting characters.
     i = 0
-    j = 0
     res = 0
-
     n = len(chars)
     x = 0
     while x < n:
