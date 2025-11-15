@@ -13,8 +13,8 @@ let sum (list: int list) =
         | head :: tail -> loop tail (acc + head)
 
     loop list 0
-    // or just
-    // List.fold (fun acc item -> acc + item) 0 list
+// or just
+// List.fold (fun acc item -> acc + item) 0 list
 
 let print2DList (matrix: int list list) =
     for row in matrix do

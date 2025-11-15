@@ -11,6 +11,7 @@ from array_string import (
     reverseWords,
     productExceptSelf,
     increasingTriplet,
+    compressString,
 )
 
 
@@ -127,3 +128,34 @@ def test_increasing_triplet_subsequence_ex5():
 def test_increasing_triplet_subsequence_ex6():
     res = increasingTriplet([1, 1, -2, 6])
     assert not res
+
+
+def test_string_compression_ex1():
+    res = compressString(["a", "a", "b", "b", "c", "c", "c"])
+    assert res == 6
+
+
+def test_string_compression_ex2():
+    res = compressString(["a"])
+    assert res == 1
+
+
+def test_string_compression_ex3():
+    arr = ["a", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
+    res = compressString(arr)
+    assert arr[:res] == ["a", "b", "1", "2"]
+    assert res == 4
+
+
+def test_string_compression_ex4():
+    arr = ["a", "a", "a", "b", "b", "a", "a"]
+    res = compressString(arr)
+    assert arr[:res] == ["a", "3", "b", "2", "a", "2"]
+    assert res == 6
+
+
+def test_string_compression_ex5():
+    arr = ["a", "a", "a", "a", "a", "b"]
+    res = compressString(arr)
+    assert arr[:res] == ["a", "5", "b"]
+    assert res == 3

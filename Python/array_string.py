@@ -182,3 +182,41 @@ def increasingTriplet(nums: List[int]) -> bool:
         else:
             return True
     return False
+
+
+def compressString(chars: List[str]) -> int:
+    """
+    Given a list of chars such as ["a", "a", "b", "c"],
+    compress the consecutive repreating character groups with a number of repetitions followed by the char.
+    Ex. ["2", "a", "b", "c"]
+    Use only constant space O(1), and modify the original array.
+    Return the new length of the array. Characters in the array beyond the returned length can be ignored.
+    """
+    # lets use i to track our current character group, and use j to count the number of repeting characters.
+    i = 0
+    j = 0
+    res = 0
+
+    n = len(chars)
+    x = 0
+    while x < n:
+        char_group = chars[x]
+        j = x + 1
+        while j < n and chars[j] == char_group:
+            j += 1
+        count = j - x
+        if count > 1:  # we have repetitions
+            chars[i] = char_group
+            digits = [c for c in f"{count}"]
+            for v, digit in enumerate(digits):
+                chars[i + v + 1] = digit
+            x = j  # j is at the index of new char group
+            i += len(digits) + 1  # new write index is after digits
+            res += 1 + len(digits)
+        else:
+            # write non repeating char at write location
+            chars[i] = char_group
+            res += 1
+            x += 1
+            i += 1
+    return res
