@@ -202,21 +202,20 @@ def compressString(chars: List[str]) -> int:
     while x < n:
         char_group = chars[x]
         j = x + 1
+        count = 1
         while j < n and chars[j] == char_group:
+            count += 1
             j += 1
-        count = j - x
+        chars[i] = char_group
         if count > 1:  # we have repetitions
-            chars[i] = char_group
-            digits = [c for c in f"{count}"]
-            for v, digit in enumerate(digits):
-                chars[i + v + 1] = digit
-            x = j  # j is at the index of new char group
-            i += len(digits) + 1  # new write index is after digits
-            res += 1 + len(digits)
+            digits = [c for c in str(count)]
+            for digit in digits:
+                i += 1
+                chars[i] = digit
+                res += 1  # each digit adds to result
+            x = j  # j is at next char group or end of the list
         else:
-            # write non repeating char at write location
-            chars[i] = char_group
-            res += 1
             x += 1
-            i += 1
+        res += 1
+        i += 1
     return res
