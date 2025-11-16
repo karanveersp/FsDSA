@@ -6,15 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Algos\Arrays.fs" />
-    <Compile Include="Algos\Lists.fs" />
-    <Compile Include="Algos\Strings.fs" />
-    <Compile Include="Problems\SumTo.fs" />
-    <Compile Include="Problems\Products.fs" />
+    <Compile Include="Utilities\PrintHelpers.fs" />
+    <Compile Include="Utilities\ListHelpers.fs" />
+    <Compile Include="DataStructures\Tree.fs" />
+    <Compile Include="Problems\Arrays\TwoSum.fs" />
+    <Compile Include="Problems\Arrays\ProductExceptSelf.fs" />
     <Compile Include="Problems\Arrays\RemoveDuplicates.fs" />
+    <Compile Include="Problems\Arrays\IncreasingTriplet.fs" />
+    <Compile Include="Problems\Strings\Palindrome.fs" />
+    <Compile Include="Problems\Strings\MergeAlternately.fs" />
     <Compile Include="LanguageUsage\OptionalParameters.fs" />
     <Compile Include="LanguageUsage\QueryParameterPrettyPrint.fs" />
-    <Compile Include="DataStructures\Tree.fs" />
 
   </ItemGroup>
 

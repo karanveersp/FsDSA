@@ -1,7 +1,7 @@
-module FsDSA.Tests.Problems.SumToTests
+module FsDSA.Tests.Problems.Arrays.TwoSumTests
 
 open Xunit
-open FsDSA.Problems.SumTo
+open FsDSA.Problems.Arrays.TwoSum
 
 [<Fact>]
 let ``Has numbers adding to 17`` () =

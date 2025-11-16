@@ -1,6 +1,6 @@
-module FsDSA.Tests.Problems.ProductsTests
+module FsDSA.Tests.Problems.Arrays.ProductExceptSelfTests
 
-open FsDSA.Problems.Products
+open FsDSA.Problems.Arrays.ProductExceptSelf
 open Xunit
 
 [<Fact>]

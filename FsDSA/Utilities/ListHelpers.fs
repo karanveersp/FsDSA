@@ -1,4 +1,4 @@
-module FsDSA.Algos.Lists
+module FsDSA.Utilities.ListHelpers
 
 let sum (list: int list) =
     /// A tail-recursive list sum function.
@@ -15,13 +15,6 @@ let sum (list: int list) =
     loop list 0
 // or just
 // List.fold (fun acc item -> acc + item) 0 list
-
-let print2DList (matrix: int list list) =
-    for row in matrix do
-        for value in row do
-            printf "%d " value
-
-        printfn ""
 
 [<TailCall>]
 let rec allPermutations (xs: int list) : int list list =

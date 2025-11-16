@@ -1,4 +1,4 @@
-module FsDSA.Tests.Problems.Arrays.RemoveDuplicatesTest
+module FsDSA.Tests.Problems.Arrays.RemoveDuplicatesTests
 open Xunit
 
 open FsDSA.Problems.Arrays.RemoveDuplicates

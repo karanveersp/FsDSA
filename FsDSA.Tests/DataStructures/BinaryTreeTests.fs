@@ -1,4 +1,4 @@
-module FsDSA.Tests.BinaryTreeTests
+module FsDSA.Tests.DataStructures.BinaryTreeTests
 
 open Xunit
 open FsDSA.BinaryTree

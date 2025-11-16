@@ -1,6 +1,6 @@
-module FsDSA.Tests.Algos.ArrayTests
+module FsDSA.Tests.Problems.Arrays.IncreasingTripletTests
 
-open FsDSA.Algos.Arrays
+open FsDSA.Problems.Arrays.IncreasingTriplet
 open Xunit
 
 [<Fact>]

@@ -7,13 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="BinaryTreeTests.fs" />
-    <Compile Include="Problems\SumToTests.fs" />
-    <Compile Include="Problems\ProductsTests.fs" />
-    <Compile Include="Problems\Arrays\RemoveDuplicatesTest.fs" />
+    <Compile Include="DataStructures\BinaryTreeTests.fs" />
+    <Compile Include="Problems\Arrays\TwoSumTests.fs" />
+    <Compile Include="Problems\Arrays\ProductExceptSelfTests.fs" />
+    <Compile Include="Problems\Arrays\RemoveDuplicatesTests.fs" />
+    <Compile Include="Problems\Arrays\IncreasingTripletTests.fs" />
+    <Compile Include="Problems\Strings\PalindromeTests.fs" />
+    <Compile Include="Problems\Strings\MergeAlternatelyTests.fs" />
     <Compile Include="LanguageUsage\OptionalParametersTests.fs" />
-    <Compile Include="Algos\StringTests.fs" />
-    <Compile Include="Algos\ArrayTests.fs" />
   </ItemGroup>
 
   <ItemGroup>
