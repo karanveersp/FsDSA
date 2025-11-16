@@ -15,6 +15,7 @@
     <Compile Include="Problems\Arrays\IncreasingTriplet.fs" />
     <Compile Include="Problems\Strings\Palindrome.fs" />
     <Compile Include="Problems\Strings\MergeAlternately.fs" />
+    <Compile Include="Problems\Strings\GcdOfStrings.fs" />
     <Compile Include="LanguageUsage\OptionalParameters.fs" />
     <Compile Include="LanguageUsage\QueryParameterPrettyPrint.fs" />
 
