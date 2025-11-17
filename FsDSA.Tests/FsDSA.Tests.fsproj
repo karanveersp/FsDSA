@@ -11,6 +11,7 @@
     <Compile Include="Problems\Arrays\TwoSumTests.fs" />
     <Compile Include="Problems\Arrays\ProductExceptSelfTests.fs" />
     <Compile Include="Problems\Arrays\RemoveDuplicatesTests.fs" />
+    <Compile Include="Problems\Arrays\MoveZeroesTests.fs" />
     <Compile Include="Problems\Arrays\IncreasingTripletTests.fs" />
     <Compile Include="Problems\Strings\PalindromeTests.fs" />
     <Compile Include="Problems\Strings\MergeAlternatelyTests.fs" />

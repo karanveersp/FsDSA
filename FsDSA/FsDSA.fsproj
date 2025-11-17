@@ -11,6 +11,7 @@
     <Compile Include="DataStructures\Tree.fs" />
     <Compile Include="Problems\Arrays\TwoSum.fs" />
     <Compile Include="Problems\Arrays\ProductExceptSelf.fs" />
+    <Compile Include="Problems\Arrays\MoveZeroes.fs" />
     <Compile Include="Problems\Arrays\RemoveDuplicates.fs" />
     <Compile Include="Problems\Arrays\IncreasingTriplet.fs" />
     <Compile Include="Problems\Strings\Palindrome.fs" />
