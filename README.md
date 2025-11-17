@@ -77,3 +77,87 @@ Examples demonstrating F# language features and patterns:
 - **Optional Parameters** (`LanguageUsage/OptionalParameters.fs`) - Working with optional parameters
 - **Query Parameter Pretty Print** (`LanguageUsage/QueryParameterPrettyPrint.fs`) - Query parameter formatting
 
+
+# DSA Concepts
+
+**Arrays and Strings**
+- Two pointers (opposite direction)
+- Two pointers (same direction)
+- Sliding window (fixed size)
+- Sliding window (variable size)
+- Prefix/suffix arrays
+- In-place manipulation
+- Sorting + custom logic
+
+**Hashmaps and Sets**
+- Frequency counting
+- Grouping/bucketing with hash keys
+- O(1) lookup for existence checks
+- Prefix sum + hashmap
+- Multiple hashsets for constraints
+- Deduplication
+
+**Linked Lists**
+- Fast/slow pointers (cycle detection, finding middle)
+- Dummy node pattern
+- Two pointer with gap
+- In-place reversal
+- Merging lists
+- Recursion vs iteration trade-offs
+
+**Stacks and Queues**
+- Monotonic stack (next greater/smaller element)
+- Stack for matching/validation
+- Stack for evaluation (postfix, infix)
+- Augmented data structures (min/max tracking)
+- Queue simulation with stacks
+- Deque for sliding window maximum
+
+**Trees and Graphs**
+- DFS (preorder, inorder, postorder)
+- BFS (level-order traversal)
+- Binary search tree properties
+- Lowest common ancestor
+- Graph traversal (DFS/BFS on grids and graphs)
+- Topological sort
+- Cycle detection
+- Union-find (disjoint sets)
+
+**Heaps**
+- Kth largest/smallest element
+- Top K elements
+- Two heaps pattern (median maintenance)
+- K-way merge
+- Priority queue simulation
+- Custom comparators
+
+**Greedy**
+- Feasibility greedy (can we do it?)
+- Optimization greedy (what's the best way?)
+- Interval scheduling
+- Sorting + greedy choice
+- Local optimal → global optimal proof
+
+**Binary Search**
+- Basic binary search template
+- Search in modified arrays (rotated, shifted)
+- Finding boundaries (first/last occurrence)
+- Binary search on answer space
+- Minimizing maximum / maximizing minimum
+
+**Backtracking**
+- Subset generation
+- Permutation generation
+- Combination generation
+- Constraint propagation
+- Pruning strategies
+- State space exploration (N-Queens, Sudoku)
+
+**Dynamic Programming**
+- 1D DP (Fibonacci-style)
+- 1D DP with constraints
+- 2D DP (grid problems, LCS)
+- Knapsack variants (0/1, unbounded, bounded)
+- State transition identification
+- Memoization vs tabulation
+- Space optimization
