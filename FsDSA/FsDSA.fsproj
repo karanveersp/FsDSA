@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="NinetyNine\Lists.fs" />
     <Compile Include="Utilities\PrintHelpers.fs" />
     <Compile Include="Utilities\ListHelpers.fs" />
     <Compile Include="DataStructures\Tree.fs" />

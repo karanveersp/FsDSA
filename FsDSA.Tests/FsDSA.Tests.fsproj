@@ -4,12 +4,12 @@
     <TargetFramework>net10.0</TargetFramework>
     <IsPackable>false</IsPackable>
     <LangVersion>preview</LangVersion>
-    <OutputType>Library</OutputType>
     <ParallelCompilation>true</ParallelCompilation>
     <Deterministic>false</Deterministic> <!-- Note: deterministic builds don't get the benefits of parallel compilation -->
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="NinetyNine\ListsTests.fs" />
     <Compile Include="DataStructures\BinaryTreeTests.fs" />
     <Compile Include="Problems\Arrays\TwoSumTests.fs" />
     <Compile Include="Problems\Arrays\ProductExceptSelfTests.fs" />
@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="FsUnit.xUnit" Version="7.1.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
     <PackageReference Include="xunit" Version="2.9.3" />
     <PackageReference Include="xunit.runner.visualstudio" Version="3.1.5">
