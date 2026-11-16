@@ -4,13 +4,12 @@
     <TargetFramework>net10.0</TargetFramework>
     <IsPackable>false</IsPackable>
     <LangVersion>preview</LangVersion>
-    <ParallelCompilation>true</ParallelCompilation>
-    <Deterministic>false</Deterministic> <!-- Note: deterministic builds don't get the benefits of parallel compilation -->
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Include="NinetyNine\ListsTests.fs" />
     <Compile Include="DataStructures\BinaryTreeTests.fs" />
+    <Compile Include="DailyWarmups\WarmupTests.fs" />
     <Compile Include="Problems\Arrays\TwoSumTests.fs" />
     <Compile Include="Problems\Arrays\ProductExceptSelfTests.fs" />
     <Compile Include="Problems\Arrays\RemoveDuplicatesTests.fs" />

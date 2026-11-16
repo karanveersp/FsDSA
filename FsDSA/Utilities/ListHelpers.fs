@@ -16,17 +16,17 @@ let sum (list: int list) =
 // or just
 // List.fold (fun acc item -> acc + item) 0 list
 
-[<TailCall>]
+/// Returns all positional permutations of the list; repeated values are not de-duplicated.
 let rec allPermutations (xs: int list) : int list list =
     match xs with
     | [] -> [ [] ]
     | _ ->
-        let mutable permutations: int list list = [ [] ]
+        xs
+        |> List.mapi (fun i x ->
+            let rest = List.removeAt i xs
 
-        for i in 0 .. xs.Length do
-            let rest = xs[.. i - 1] @ xs[i + 1 ..]
-
-            for p in allPermutations rest do
-                permutations <- List.append permutations [ [ xs[i] ] @ p ]
-
-        permutations
+            rest
+            |> allPermutations 
+            // Prepend the current element `x` to each list
+            |> List.map (fun rest -> x :: rest))
+        |> List.concat

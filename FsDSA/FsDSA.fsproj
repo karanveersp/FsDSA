@@ -4,8 +4,6 @@
     <TargetFramework>net10.0</TargetFramework>
     <LangVersion>preview</LangVersion>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <ParallelCompilation>true</ParallelCompilation>
-    <Deterministic>false</Deterministic> <!-- Note: deterministic builds don't get the benefits of parallel compilation -->
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,6 +11,7 @@
     <Compile Include="Utilities\PrintHelpers.fs" />
     <Compile Include="Utilities\ListHelpers.fs" />
     <Compile Include="DataStructures\Tree.fs" />
+    <Compile Include="DailyWarmups\RunLenghtEncoding.fs" />
     <Compile Include="Problems\Arrays\TwoSum.fs" />
     <Compile Include="Problems\Arrays\ProductExceptSelf.fs" />
     <Compile Include="Problems\Arrays\MoveZeroes.fs" />
